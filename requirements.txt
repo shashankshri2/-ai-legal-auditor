@@ -1,0 +1,24 @@
+# Core AI & NLP
+sentence-transformers==2.2.2
+transformers>=4.30.0
+torch>=1.13.0
+faiss-cpu==1.7.4
+
+# Document Parsing
+python-docx==0.8.11
+PyMuPDF==1.22.0
+
+# Web Scraping
+requests==2.31.0
+beautifulsoup4==4.12.3
+
+# NLP (Legal NER support)
+spacy==3.7.2
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+
+# Logging
+loguru==0.7.2
+
+# Utilities
+tqdm==4.66.1
+numpy>=1.23.0

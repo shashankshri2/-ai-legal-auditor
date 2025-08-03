@@ -1,0 +1,13 @@
+[
+  {
+    "citation": "This is a legal draft referring to ABC vs XYZ, [2015] 2 SCC 305",
+    "web_verification": {
+      "citation": "This is a legal draft referring to ABC vs XYZ, [2015] 2 SCC 305",
+      "verified": false,
+      "source": null,
+      "confidence": 0.2
+    },
+    "rag_verification": {
+      "citation": "This is a legal draft referring to ABC vs XYZ, [2015] 2 SCC 305",
+      "matched_case": "Davis vs Davis, SC 1991 AIR 142",
+      "confidence": 

@@ -1,0 +1,251 @@
+2025-08-03 19:21:30,434 � INFO � Starting AI Legal Auditor...
+2025-08-03 19:30:25,243 — INFO — Starting AI Legal Auditor...
+2025-08-03 19:30:25,266 — INFO — ✅ Extracted text from document.
+2025-08-03 19:30:25,268 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 19:30:25,270 — INFO — ✅ Completed web verification.
+2025-08-03 19:30:25,462 — INFO — ✅ Completed RAG verification.
+2025-08-03 19:30:25,464 — INFO — ✅ Audit report generated at: output/audit_report_2025-08-03_19-30.json
+2025-08-03 20:40:24,039 — INFO — ✅ Extracted text from document.
+2025-08-03 20:40:24,042 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 20:40:24,046 — INFO — ✅ Completed web verification.
+2025-08-03 20:40:24,671 — ERROR — Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 51, in <module>
+    rag_results = verify_with_rag(citations, cases, case_embeddings, contents)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\rag_verifier.py", line 30, in verify_with_rag
+    distances, indices = index.search(query_vec, k=1)
+                         ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'search'
+2025-08-03 20:45:07,866 — INFO — ✅ Extracted text from document.
+2025-08-03 20:45:07,870 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 20:45:07,874 — INFO — ✅ Completed web verification.
+2025-08-03 20:45:08,503 — ERROR — Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 51, in <module>
+    rag_results = verify_with_rag(citations, cases, case_embeddings, contents)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\rag_verifier.py", line 25, in verify_with_rag
+    distances, indices = index.search(query_vec, k=1)
+                         ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'search'
+2025-08-03 21:02:35,711 — INFO — ✅ Extracted text from document.
+2025-08-03 21:02:35,714 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:02:35,718 — INFO — ✅ Completed web verification.
+2025-08-03 21:02:36,300 — ERROR — Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 51, in <module>
+    rag_results = verify_with_rag(citations, cases, case_embeddings, contents)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\rag_verifier.py", line 28, in verify_with_rag
+    distances, indices = index.search(query_vec, k=1)
+                         ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'search'
+2025-08-03 21:14:15,367 — INFO — ✅ Extracted text from document.
+2025-08-03 21:14:15,371 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:14:15,375 — INFO — ✅ Completed web verification.
+2025-08-03 21:14:15,988 — ERROR — Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 51, in <module>
+    rag_results = verify_with_rag(citations, cases, case_embeddings, contents)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\rag_verifier.py", line 28, in verify_with_rag
+    distances, indices = index.search(query_vec, k=1)
+                         ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'search'
+2025-08-03 21:21:20,529 — INFO — ✅ Extracted text from document.
+2025-08-03 21:21:20,566 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:21:20,568 — INFO — ✅ Completed web verification.
+2025-08-03 21:21:21,394 — INFO — ✅ Completed RAG verification.
+2025-08-03 21:21:21,398 — ERROR — Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 49, in <module>
+    audit_data = generate_audit_report(citations, web_results, rag_results, output_path)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\report_generator.py", line 34, in generate_audit_report
+    json.dump(report, f, indent=2, ensure_ascii=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 430, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type float32 is not JSON serializable
+2025-08-03 21:21:30,190 — INFO — ✅ Extracted text from document.
+2025-08-03 21:21:30,220 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:21:30,224 — INFO — ✅ Completed web verification.
+2025-08-03 21:21:30,881 — INFO — ✅ Completed RAG verification.
+2025-08-03 21:21:30,883 — ERROR — Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 49, in <module>
+    audit_data = generate_audit_report(citations, web_results, rag_results, output_path)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\report_generator.py", line 34, in generate_audit_report
+    json.dump(report, f, indent=2, ensure_ascii=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 430, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type float32 is not JSON serializable
+2025-08-03 21:23:39,856 — INFO — ✅ Extracted text from document.
+2025-08-03 21:23:39,895 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:23:39,896 — INFO — ✅ Completed web verification.
+2025-08-03 21:23:40,692 — INFO — ✅ Completed RAG verification.
+2025-08-03 21:23:40,696 — ERROR — Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 49, in <module>
+    audit_data = generate_audit_report(citations, web_results, rag_results, output_path)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\report_generator.py", line 27, in generate_audit_report
+    json.dump(report, f, indent=2, ensure_ascii=False, default=convert_numpy)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 430, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\report_generator.py", line 5, in convert_numpy
+    if isinstance(obj, (np.float32, np.float64, np.float_)):
+                                                ^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python313\site-packages\numpy\__init__.py", line 413, in __getattr__
+    raise AttributeError(
+    ...<3 lines>...
+    )
+AttributeError: `np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead.
+2025-08-03 21:24:48,841 — INFO — ✅ Extracted text from document.
+2025-08-03 21:24:48,876 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:24:48,877 — INFO — ✅ Completed web verification.
+2025-08-03 21:24:49,648 — INFO — ✅ Completed RAG verification.
+2025-08-03 21:24:49,652 — ERROR — Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 49, in <module>
+    audit_data = generate_audit_report(citations, web_results, rag_results, output_path)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\report_generator.py", line 27, in generate_audit_report
+    json.dump(report, f, indent=2, ensure_ascii=False, default=convert_numpy)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 430, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\report_generator.py", line 5, in convert_numpy
+    if isinstance(obj, (np.float32, np.float64, np.float_)):
+                                                ^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python313\site-packages\numpy\__init__.py", line 413, in __getattr__
+    raise AttributeError(
+    ...<3 lines>...
+    )
+AttributeError: `np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead.
+2025-08-03 21:26:10,880 — INFO — ✅ Extracted text from document.
+2025-08-03 21:26:10,909 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:26:10,911 — INFO — ✅ Completed web verification.
+2025-08-03 21:26:11,519 — INFO — ✅ Completed RAG verification.
+2025-08-03 21:26:11,522 — ERROR — Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 49, in <module>
+    audit_data = generate_audit_report(citations, web_results, rag_results, output_path)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\report_generator.py", line 27, in generate_audit_report
+    json.dump(report, f, indent=2, ensure_ascii=False, default=convert_numpy)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 430, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\report_generator.py", line 5, in convert_numpy
+    if isinstance(obj, (np.float32, np.float64, np.float_)):
+                                                ^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python313\site-packages\numpy\__init__.py", line 413, in __getattr__
+    raise AttributeError(
+    ...<3 lines>...
+    )
+AttributeError: `np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead.
+2025-08-03 21:27:51,753 — INFO — ✅ Extracted text from document.
+2025-08-03 21:27:51,756 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:27:51,761 — INFO — ✅ Completed web verification.
+2025-08-03 21:27:52,430 — ERROR — Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 51, in <module>
+    rag_results = verify_with_rag(citations, cases, case_embeddings, contents)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\rag_verifier.py", line 27, in verify_with_rag
+    distances, indices = index.search(query_vec, k=1)
+                         ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'search'
+2025-08-03 21:34:55,177 — INFO — ✅ Extracted text from document.
+2025-08-03 21:34:55,180 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:34:55,183 — INFO — ✅ Completed web verification.
+2025-08-03 21:34:55,794 — ERROR — Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 51, in <module>
+    rag_results = verify_with_rag(citations, cases, case_embeddings, contents)
+  File "C:\Users\shash\Desktop\ai_legal_auditor\modules\rag_verifier.py", line 27, in verify_with_rag
+    distances, indices = index.search(query_vec, k=1)
+                         ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'search'
+2025-08-03 21:38:05,431 — INFO — ✅ Extracted text from document.
+2025-08-03 21:38:05,435 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:38:05,442 — INFO — ✅ Completed web verification.
+2025-08-03 21:38:06,120 — ERROR — ❌ Unexpected error occurred in Streamlit app.
+Traceback (most recent call last):
+  File "C:\Users\shash\Desktop\ai_legal_auditor\app.py", line 49, in <module>
+    rag_results = verify_with_rag(citations, kb_cases, case_embeddings)
+TypeError: verify_with_rag() missing 1 required positional argument: 'contents'
+2025-08-03 21:41:34,177 — INFO — ✅ Extracted text from document.
+2025-08-03 21:41:34,181 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:41:34,187 — INFO — ✅ Completed web verification.
+2025-08-03 21:41:34,876 — INFO — ✅ Completed RAG verification.
+2025-08-03 21:56:50,347 — INFO — ✅ Extracted text from document.
+2025-08-03 21:56:50,353 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:56:50,362 — INFO — ✅ Completed web verification.
+2025-08-03 21:56:51,162 — INFO — ✅ Completed RAG verification.
+2025-08-03 21:59:56,146 — INFO — ✅ Extracted text from document.
+2025-08-03 21:59:56,153 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 21:59:56,158 — INFO — ✅ Completed web verification.
+2025-08-03 21:59:56,963 — INFO — ✅ Completed RAG verification.
+2025-08-03 21:59:56,973 — INFO — ✅ Audit report generated at: output/audit_report_2025-08-03_21-59-56.json
+2025-08-03 22:00:30,263 — INFO — ✅ Extracted text from document.
+2025-08-03 22:00:30,279 — INFO — ✅ Extracted 2 citation(s).
+2025-08-03 22:00:30,299 — INFO — ✅ Completed web verification.
+2025-08-03 22:00:31,165 — INFO — ✅ Completed RAG verification.
+2025-08-03 22:00:31,178 — INFO — ✅ Audit report generated at: output/audit_report_2025-08-03_22-00-31.json

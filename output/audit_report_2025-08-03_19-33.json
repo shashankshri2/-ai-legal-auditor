@@ -1,0 +1,32 @@
+[
+  {
+    "citation": "This is a legal draft referring to ABC vs XYZ, [2015] 2 SCC 305",
+    "web_verification": {
+      "citation": "This is a legal draft referring to ABC vs XYZ, [2015] 2 SCC 305",
+      "verified": false,
+      "source": null,
+      "confidence": 0.2
+    },
+    "rag_verification": {
+      "citation": "This is a legal draft referring to ABC vs XYZ, [2015] 2 SCC 305",
+      "matched_case": "ABC vs XYZ, [2015] 2 SCC 305",
+      "confidence": 0.56,
+      "match": false
+    }
+  },
+  {
+    "citation": "DEF vs GHI, AIR 2020 SC 123",
+    "web_verification": {
+      "citation": "DEF vs GHI, AIR 2020 SC 123",
+      "verified": true,
+      "source": "https://www.indiankanoon.org",
+      "confidence": 0.95
+    },
+    "rag_verification": {
+      "citation": "DEF vs GHI, AIR 2020 SC 123",
+      "matched_case": "DEF vs GHI, AIR 2020 SC 123",
+      "confidence": 0.55,
+      "match": false
+    }
+  }
+]
